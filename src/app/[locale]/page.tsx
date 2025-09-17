@@ -97,7 +97,7 @@ export default async function HomePage({
         </div>
         <div className={styles.headerImage}>
           <Image
-            src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=500&h=300&fit=crop&crop=faces"
+            src="/family.jpg"
             alt="Dmitry y Olesya"
             width={300}
             height={200}
@@ -116,14 +116,14 @@ export default async function HomePage({
           <FamilyMember
             name={t.dmitry.name}
             description={t.dmitry.description}
-            imageSrc="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+            imageSrc="/dima.jpg"
             imageAlt="Dmitry"
           />
 
           <FamilyMember
             name={t.olesya.name}
             description={t.olesya.description}
-            imageSrc="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face"
+            imageSrc="/olesya.jpg"
             imageAlt="Olesya"
           />
 

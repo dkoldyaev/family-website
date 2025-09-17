@@ -1,6 +1,12 @@
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function Layout({
+  children,
+  params
+}: {
+  children: React.ReactNode;
+  params: { locale: string };
+}) {
   return (
-    <html>
+    <html lang={params.locale}>
       <body>
         {children}
       </body>
