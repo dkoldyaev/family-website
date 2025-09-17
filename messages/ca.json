@@ -1,0 +1,23 @@
+{
+  "title": "HOLA!",
+  "intro": "Hola! Som una família (programador amb contracte permanent i salari oficial de +5.000 €, il·lustradora i un bebè en camí). Tranquils, responsables i puntuals amb el lloguer; podem demostrar solvència i pagar diversos mesos per endavant.",
+  "familyTitle": "Som una petita família:",
+  "dmitry": {
+    "name": "Dmitry (Dima)",
+    "description": "desenvolupador front-end amb contracte de treball permanent, actualment en procés d'obtenir el permís de residència per a Nòmades Digitals, amb un salari oficial superior a 5.000 € al mes"
+  },
+  "olesya": {
+    "name": "Olesya",
+    "description": "artista i il·lustradora de llibres infantils"
+  },
+  "baby": {
+    "name": "Feo",
+    "description": "el nostre bebè, que neixerà a principis de desembre"
+  },
+  "about": {
+    "paragraph1": "Som una parella tranquil·la a la qual li agrada la vida domèstica. Portem llogant pisos junts des del 2021 i mai hem tingut queixes per soroll, brutícia o deixar la propietat en mal estat.",
+    "paragraph2": "Tots dos som bastant manetes; a Dima li agrada arreglar coses (com una pica o una rentadora), mentre que Olesya s'enorgulleix de mantenir les coses ordenades, netes i ben cuidades, sovint reparant o reutilitzant objectes.",
+    "paragraph3": "Som puntuals amb el pagament del lloguer sense retards i podem proporcionar extractes bancaris per confirmar la solvència financera si cal.",
+    "paragraph4": "Cuinem de forma senzilla, rarament amb olors fortes, i som fàcils de comunicar i flexibles per arribar a acords."
+  }
+}

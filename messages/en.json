@@ -1,0 +1,23 @@
+{
+  "title": "HELLO!",
+  "intro": "Hello! We are a family (programmer with a permanent contract and official salary of +5,000 €, illustrator and a baby on the way). Quiet, responsible and punctual with the rent; we can demonstrate solvency and pay several months in advance.",
+  "familyTitle": "We are a small family:",
+  "dmitry": {
+    "name": "Dmitry (Dima)",
+    "description": "front-end developer with a permanent employment contract, currently in the process of obtaining a residence permit for Digital Nomads, with an official salary exceeding €5,000 per month"
+  },
+  "olesya": {
+    "name": "Olesya",
+    "description": "artist and children's book illustrator"
+  },
+  "baby": {
+    "name": "Feo",
+    "description": "our baby, who will be born in early December"
+  },
+  "about": {
+    "paragraph1": "We are a quiet couple who enjoy home life. We have been renting apartments together since 2021 and have never had complaints about noise, dirt or leaving the property in poor condition.",
+    "paragraph2": "We are both quite handy; Dima likes to fix things (like a sink or washing machine), while Olesya prides herself on keeping things tidy, clean and well-maintained, often repairing or reusing objects.",
+    "paragraph3": "We are punctual with rent payments without delays and can provide bank statements to confirm financial solvency if necessary.",
+    "paragraph4": "We cook simply, rarely with strong odors, and are easy to communicate with and flexible in reaching agreements."
+  }
+}
