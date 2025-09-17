@@ -84,38 +84,39 @@ export default async function HomePage({
   const t = translations[locale as keyof typeof translations] || translations.es;
 
   return (
-    <div className="min-h-screen bg-white">
-      <div className="max-w-6xl mx-auto px-8">
+    <div>
+      <div>
         {/* Header Section */}
-        <header className="pt-16 pb-12">
-          <h1 className="text-7xl font-bold text-black mb-8 leading-tight">
-            {t.title}
-          </h1>
-          <div className="flex flex-col lg:flex-row items-start gap-12 mb-12">
-            <div className="flex-1 text-lg leading-relaxed text-black">
-              <p>{t.intro}</p>
+        <header>
+          <div>
+            <div>
+              <h1>
+                {t.title}
+              </h1>
+              <div>
+                <p>{t.intro}</p>
+              </div>
+              <DecorativeElements />
             </div>
-            <div className="w-full lg:w-96 flex-shrink-0">
+            <div>
               <Image
-                src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400&h=200&fit=crop&crop=faces"
+                src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=500&h=300&fit=crop&crop=faces"
                 alt="Dmitry y Olesya"
-                width={400}
-                height={200}
-                className="w-full h-48 object-cover rounded-lg"
+                width={500}
+                height={300}
                 priority
               />
             </div>
           </div>
-          <DecorativeElements />
         </header>
 
         {/* Family Section */}
-        <section className="pb-20">
-          <h2 className="text-5xl font-bold text-black mb-12 leading-tight">
+        <section>
+          <h2>
             {t.familyTitle}
           </h2>
 
-          <div className="space-y-12">
+          <div>
             <FamilyMember
               name={t.dmitry.name}
               description={t.dmitry.description}
@@ -139,22 +140,22 @@ export default async function HomePage({
         </section>
 
         {/* About Section */}
-        <section className="pb-24">
-          <div className="max-w-4xl mx-auto space-y-6">
-            <p className="text-lg leading-relaxed text-black text-justify">
+        <section>
+          <div>
+            <p>
               {t.about.paragraph1}
             </p>
-            <p className="text-lg leading-relaxed text-black text-justify">
+            <p>
               {t.about.paragraph2}
             </p>
-            <p className="text-lg leading-relaxed text-black text-justify">
+            <p>
               {t.about.paragraph3}
             </p>
-            <p className="text-lg leading-relaxed text-black text-justify">
+            <p>
               {t.about.paragraph4}
             </p>
           </div>
-          <div className="flex justify-center mt-12">
+          <div>
             <DecorativeElements />
           </div>
         </section>
