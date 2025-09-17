@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.rectangle {
+  width: 40px;
+  height: 8px;
+  background-color: #f8b5c1;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #f8b5c1;
+  border-radius: 50%;
+}
+
+.topSeparator .dots {
+  gap: 8px;
+}
+
+.bottomSeparator .dots {
+  gap: 6px;
+}

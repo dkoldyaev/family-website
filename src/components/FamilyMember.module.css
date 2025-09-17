@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.imageContainer {
+  flex-shrink: 0;
+}
+
+.profileImage {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.babyPlaceholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #f8b5c1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.content {
+  flex: 1;
+  padding-top: 10px;
+}
+
+.name {
+  font-weight: bold;
+  color: black;
+  margin: 0 0 4px 0;
+  font-size: 16px;
+}
+
+.description {
+  color: black;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4;
+}

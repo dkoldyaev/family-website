@@ -1,0 +1,80 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.headerContent {
+  flex: 1;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  color: black;
+  margin: 0 0 20px 0;
+  line-height: 1.1;
+}
+
+.intro {
+  font-size: 16px;
+  color: black;
+  line-height: 1.5;
+  margin: 0 0 30px 0;
+}
+
+.headerImage {
+  flex-shrink: 0;
+}
+
+.headerImage img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.familySection {
+  margin-bottom: 40px;
+}
+
+.familyTitle {
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
+  margin: 0 0 30px 0;
+}
+
+.familyMembers {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.aboutSection {
+  margin-bottom: 40px;
+}
+
+.aboutParagraphs {
+  margin-bottom: 30px;
+}
+
+.aboutParagraphs p {
+  font-size: 16px;
+  color: black;
+  line-height: 1.6;
+  margin: 0 0 16px 0;
+}
+
+.aboutParagraphs p:last-child {
+  margin-bottom: 0;
+}

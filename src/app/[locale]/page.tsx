@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import DecorativeElements from '@/components/DecorativeElements';
 import FamilyMember from '@/components/FamilyMember';
+import styles from '../page.module.css';
 
 const translations = {
   es: {
@@ -84,82 +85,74 @@ export default async function HomePage({
   const t = translations[locale as keyof typeof translations] || translations.es;
 
   return (
-    <div>
-      <div>
-        {/* Header Section */}
-        <header>
-          <div>
-            <div>
-              <h1>
-                {t.title}
-              </h1>
-              <div>
-                <p>{t.intro}</p>
-              </div>
-              <DecorativeElements />
-            </div>
-            <div>
-              <Image
-                src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=500&h=300&fit=crop&crop=faces"
-                alt="Dmitry y Olesya"
-                width={500}
-                height={300}
-                priority
-              />
-            </div>
-          </div>
-        </header>
+    <div className={styles.container}>
+      {/* Header Section */}
+      <header className={styles.header}>
+        <div className={styles.headerContent}>
+          <h1 className={styles.title}>
+            {t.title}
+          </h1>
+          <p className={styles.intro}>{t.intro}</p>
+          <DecorativeElements variant="top" />
+        </div>
+        <div className={styles.headerImage}>
+          <Image
+            src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=500&h=300&fit=crop&crop=faces"
+            alt="Dmitry y Olesya"
+            width={300}
+            height={200}
+            priority
+          />
+        </div>
+      </header>
 
-        {/* Family Section */}
-        <section>
-          <h2>
-            {t.familyTitle}
-          </h2>
+      {/* Family Section */}
+      <section className={styles.familySection}>
+        <h2 className={styles.familyTitle}>
+          {t.familyTitle}
+        </h2>
 
-          <div>
-            <FamilyMember
-              name={t.dmitry.name}
-              description={t.dmitry.description}
-              imageSrc="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
-              imageAlt="Dmitry"
-            />
+        <div className={styles.familyMembers}>
+          <FamilyMember
+            name={t.dmitry.name}
+            description={t.dmitry.description}
+            imageSrc="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+            imageAlt="Dmitry"
+          />
 
-            <FamilyMember
-              name={t.olesya.name}
-              description={t.olesya.description}
-              imageSrc="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face"
-              imageAlt="Olesya"
-            />
+          <FamilyMember
+            name={t.olesya.name}
+            description={t.olesya.description}
+            imageSrc="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face"
+            imageAlt="Olesya"
+          />
 
-            <FamilyMember
-              name={t.baby.name}
-              description={t.baby.description}
-              isBaby={true}
-            />
-          </div>
-        </section>
+          <FamilyMember
+            name={t.baby.name}
+            description={t.baby.description}
+            isBaby={true}
+          />
+        </div>
+      </section>
 
-        {/* About Section */}
-        <section>
-          <div>
-            <p>
-              {t.about.paragraph1}
-            </p>
-            <p>
-              {t.about.paragraph2}
-            </p>
-            <p>
-              {t.about.paragraph3}
-            </p>
-            <p>
-              {t.about.paragraph4}
-            </p>
-          </div>
-          <div>
-            <DecorativeElements />
-          </div>
-        </section>
-      </div>
+      {/* About Section */}
+      <section className={styles.aboutSection}>
+        <div className={styles.aboutParagraphs}>
+          <p>
+            {t.about.paragraph1}
+          </p>
+          <p>
+            {t.about.paragraph2}
+          </p>
+          <p>
+            {t.about.paragraph3}
+          </p>
+          <p>
+            {t.about.paragraph4}
+          </p>
+        </div>
+        <DecorativeElements variant="bottom" />
+      </section>
     </div>
   );
 }

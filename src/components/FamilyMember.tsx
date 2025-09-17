@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import styles from './FamilyMember.module.css';
 
 interface FamilyMemberProps {
   name: string;
@@ -9,31 +10,33 @@ interface FamilyMemberProps {
   isBaby?: boolean;
 }
 
-export default function FamilyMember({ 
-  name, 
-  description, 
-  imageSrc, 
-  imageAlt, 
-  isBaby = false 
+export default function FamilyMember({
+  name,
+  description,
+  imageSrc,
+  imageAlt,
+  isBaby = false
 }: FamilyMemberProps) {
   return (
-    <div>
-      <div>
+    <div className={styles.container}>
+      <div className={styles.imageContainer}>
         {isBaby ? (
-          <div></div>
+          <div className={styles.babyPlaceholder}>
+            Baby
+          </div>
         ) : (
           <Image
             src={imageSrc!}
             alt={imageAlt!}
-            width={144}
-            height={144}
+            width={120}
+            height={120}
+            className={styles.profileImage}
           />
         )}
       </div>
-      <div>
-        <p>
-          <strong>{name}</strong> {description}
-        </p>
+      <div className={styles.content}>
+        <p className={styles.name}>{name}</p>
+        <p className={styles.description}>{description}</p>
       </div>
     </div>
   );
