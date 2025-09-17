@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import DecorativeElements from '@/components/DecorativeElements';
 import FamilyMember from '@/components/FamilyMember';
+import LanguageSwitcher from '@/components/LanguageSwitcher';
 import styles from '../page.module.css';
 
 const translations = {
@@ -86,6 +87,8 @@ export default async function HomePage({
 
   return (
     <div className={styles.container}>
+      <LanguageSwitcher currentLocale={locale} />
+
       {/* Header Section */}
       <header className={styles.header}>
         <div className={styles.headerContent}>
