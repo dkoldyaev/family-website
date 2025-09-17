@@ -32,7 +32,10 @@
 }
 
 .flag {
-  font-size: 16px;
+  width: 20px;
+  height: 15px;
+  object-fit: cover;
+  border-radius: 2px;
 }
 
 .name {
@@ -52,6 +55,11 @@
     min-width: 60px;
     font-size: 12px;
   }
+
+  .flag {
+    width: 18px;
+    height: 13px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -64,5 +72,10 @@
     padding: 6px 8px;
     min-width: 50px;
     font-size: 11px;
+  }
+
+  .flag {
+    width: 16px;
+    height: 12px;
   }
 }
