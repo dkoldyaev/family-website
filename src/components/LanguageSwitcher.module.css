@@ -52,10 +52,6 @@
     min-width: 60px;
     font-size: 12px;
   }
-
-  .name {
-    display: none;
-  }
 }
 
 @media (max-width: 480px) {
