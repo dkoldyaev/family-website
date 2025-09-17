@@ -19,5 +19,17 @@
     "paragraph2": "Tots dos som bastant manetes; a Dima li agrada arreglar coses (com una pica o una rentadora), mentre que Olesya s'enorgulleix de mantenir les coses ordenades, netes i ben cuidades, sovint reparant o reutilitzant objectes.",
     "paragraph3": "Som puntuals amb el pagament del lloguer sense retards i podem proporcionar extractes bancaris per confirmar la solvència financera si cal.",
     "paragraph4": "Cuinem de forma senzilla, rarament amb olors fortes, i som fàcils de comunicar i flexibles per arribar a acords."
+  },
+  "contact": {
+    "title": "Contacta'ns",
+    "whatsapp": "WhatsApp",
+    "telegram": "Telegram",
+    "email": "Email"
+  },
+  "footer": {
+    "contactUs": "Contacta'ns",
+    "whatsapp": "WhatsApp",
+    "telegram": "Telegram",
+    "email": "Email"
   }
 }

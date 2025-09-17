@@ -42,7 +42,31 @@
 
 .description {
   color: black;
-  margin: 0;
+  margin: 0 0 12px 0;
   font-size: 16px;
   line-height: 1.4;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+.socialLink:hover {
+  background-color: #0070f3;
+  transform: translateY(-2px);
 }

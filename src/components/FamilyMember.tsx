@@ -8,6 +8,11 @@ interface FamilyMemberProps {
   imageSrc?: string;
   imageAlt?: string;
   isBaby?: boolean;
+  socialLinks?: {
+    linkedin?: string;
+    instagram?: string;
+    github?: string;
+  };
 }
 
 export default function FamilyMember({
@@ -15,7 +20,8 @@ export default function FamilyMember({
   description,
   imageSrc,
   imageAlt,
-  isBaby = false
+  isBaby = false,
+  socialLinks
 }: FamilyMemberProps) {
   return (
     <div className={styles.container}>
@@ -37,6 +43,43 @@ export default function FamilyMember({
       <div className={styles.content}>
         <p className={styles.name}>{name}</p>
         <p className={styles.description}>{description}</p>
+        {socialLinks && !isBaby && (
+          <div className={styles.socialLinks}>
+            {socialLinks.linkedin && (
+              <a
+                href={socialLinks.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.socialLink}
+                aria-label="LinkedIn"
+              >
+                💼
+              </a>
+            )}
+            {socialLinks.instagram && (
+              <a
+                href={socialLinks.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.socialLink}
+                aria-label="Instagram"
+              >
+                📷
+              </a>
+            )}
+            {socialLinks.github && (
+              <a
+                href={socialLinks.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.socialLink}
+                aria-label="GitHub"
+              >
+                💻
+              </a>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );

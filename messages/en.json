@@ -19,5 +19,17 @@
     "paragraph2": "We are both quite handy; Dima likes to fix things (like a sink or washing machine), while Olesya prides herself on keeping things tidy, clean and well-maintained, often repairing or reusing objects.",
     "paragraph3": "We are punctual with rent payments without delays and can provide bank statements to confirm financial solvency if necessary.",
     "paragraph4": "We cook simply, rarely with strong odors, and are easy to communicate with and flexible in reaching agreements."
+  },
+  "contact": {
+    "title": "Contact us",
+    "whatsapp": "WhatsApp",
+    "telegram": "Telegram",
+    "email": "Email"
+  },
+  "footer": {
+    "contactUs": "Contact us",
+    "whatsapp": "WhatsApp",
+    "telegram": "Telegram",
+    "email": "Email"
   }
 }

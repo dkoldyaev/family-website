@@ -19,5 +19,17 @@
     "paragraph2": "Los dos somos bastante manitas; a Dima le gusta arreglar cosas (como un fregadero o una lavadora), mientras que Olesya se enorgullece de mantener las cosas ordenadas, limpias y bien cuidadas, a menudo reparando o reutilizando objetos.",
     "paragraph3": "Somos puntuales con el pago del alquiler sin retrasos y podemos proporcionar extractos bancarios para confirmar la solvencia financiera si es necesario.",
     "paragraph4": "Cocinamos de forma sencilla, rara vez con olores fuertes, y somos fáciles de comunicar y flexibles para llegar a acuerdos."
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "whatsapp": "WhatsApp",
+    "telegram": "Telegram",
+    "email": "Email"
+  },
+  "footer": {
+    "contactUs": "Contáctanos",
+    "whatsapp": "WhatsApp",
+    "telegram": "Telegram",
+    "email": "Email"
   }
 }

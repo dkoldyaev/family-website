@@ -3,6 +3,8 @@ import Image from 'next/image';
 import DecorativeElements from '@/components/DecorativeElements';
 import FamilyMember from '@/components/FamilyMember';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
+import ContactSection from '@/components/ContactSection';
+import Footer from '@/components/Footer';
 import styles from '../page.module.css';
 
 const translations = {
@@ -27,6 +29,18 @@ const translations = {
       paragraph2: "Ambos somos bastante manitas. A Dima le gusta arreglar cosas —ya sea un fregadero o una lavadora—, mientras que Olesya se enorgullece de mantener todo ordenado, limpio y bien cuidado, a menudo reparando o reutilizando objetos para alargarles la vida.",
       paragraph3: "Siempre hemos pagado el alquiler puntualmente —sin un solo retraso—. Además, podemos confirmar nuestra solvencia financiera mediante extractos bancarios, si fuera necesario.",
       paragraph4: "Cocinamos de forma sencilla, casi nunca nada con olores fuertes, y sobre todo, somos fáciles para comunicarnos y flexibles a la hora de llegar a acuerdos."
+    },
+    contact: {
+      title: "Contáctanos",
+      whatsapp: "WhatsApp",
+      telegram: "Telegram",
+      email: "Email"
+    },
+    footer: {
+      contactUs: "Contáctanos",
+      whatsapp: "WhatsApp",
+      telegram: "Telegram",
+      email: "Email"
     }
   },
   en: {
@@ -50,6 +64,18 @@ const translations = {
       paragraph2: "We are both quite handy. Dima likes to fix things —whether it's a sink or a washing machine—, while Olesya prides herself on keeping everything tidy, clean and well-maintained, often repairing or reusing objects to extend their life.",
       paragraph3: "We have always paid rent punctually —without a single delay—. In addition, we can confirm our financial solvency through bank statements, if necessary.",
       paragraph4: "We cook simply, almost never anything with strong odors, and above all, we are easy to communicate with and flexible when it comes to reaching agreements."
+    },
+    contact: {
+      title: "Contact us",
+      whatsapp: "WhatsApp",
+      telegram: "Telegram",
+      email: "Email"
+    },
+    footer: {
+      contactUs: "Contact us",
+      whatsapp: "WhatsApp",
+      telegram: "Telegram",
+      email: "Email"
     }
   },
   ca: {
@@ -73,6 +99,18 @@ const translations = {
       paragraph2: "Tots dos som bastant manetes. A Dima li agrada arreglar coses —ja sigui una pica o una rentadora—, mentre que Olesya s'enorgulleix de mantenir tot ordenat, net i ben cuidat, sovint reparant o reutilitzant objectes per allargar-los la vida.",
       paragraph3: "Sempre hem pagat el lloguer puntualment —sense un sol retard—. A més, podem confirmar la nostra solvència financera mitjançant extractes bancaris, si fos necessari.",
       paragraph4: "Cuinem de forma senzilla, gairebé mai res amb olors fortes, i sobretot, som fàcils per comunicar-nos i flexibles a l'hora d'arribar a acords."
+    },
+    contact: {
+      title: "Contacta'ns",
+      whatsapp: "WhatsApp",
+      telegram: "Telegram",
+      email: "Email"
+    },
+    footer: {
+      contactUs: "Contacta'ns",
+      whatsapp: "WhatsApp",
+      telegram: "Telegram",
+      email: "Email"
     }
   }
 };
@@ -109,6 +147,14 @@ export default async function HomePage({
         </div>
       </header>
 
+      {/* Contact Section */}
+      <ContactSection
+        title={t.contact.title}
+        whatsapp={t.contact.whatsapp}
+        telegram={t.contact.telegram}
+        email={t.contact.email}
+      />
+
       {/* Family Section */}
       <section className={styles.familySection}>
         <h2 className={styles.familyTitle}>
@@ -121,6 +167,10 @@ export default async function HomePage({
             description={t.dmitry.description}
             imageSrc="/dima.jpg"
             imageAlt="Dmitry"
+            socialLinks={{
+              linkedin: "https://linkedin.com/in/dmitry-koldaev",
+              github: "https://github.com/dmitry-koldaev"
+            }}
           />
 
           <FamilyMember
@@ -128,6 +178,9 @@ export default async function HomePage({
             description={t.olesya.description}
             imageSrc="/olesya.jpg"
             imageAlt="Olesya"
+            socialLinks={{
+              instagram: "https://instagram.com/olesya_illustrator"
+            }}
           />
 
           <FamilyMember
@@ -156,6 +209,14 @@ export default async function HomePage({
         </div>
         <DecorativeElements variant="bottom" />
       </section>
+
+      {/* Footer */}
+      <Footer
+        contactUs={t.footer.contactUs}
+        whatsapp={t.footer.whatsapp}
+        telegram={t.footer.telegram}
+        email={t.footer.email}
+      />
     </div>
   );
 }

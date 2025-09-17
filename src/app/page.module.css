@@ -78,3 +78,95 @@
 .aboutParagraphs p:last-child {
   margin-bottom: 0;
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+
+  .headerContent {
+    order: 2;
+  }
+
+  .headerImage {
+    order: 1;
+    align-self: center;
+  }
+
+  .headerImage img {
+    width: 250px;
+    height: 160px;
+  }
+
+  .title {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .intro {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .familyTitle {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .familyMembers {
+    gap: 16px;
+  }
+
+  .aboutSection {
+    margin-bottom: 30px;
+  }
+
+  .aboutParagraphs p {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 12px;
+  }
+
+  .header {
+    gap: 16px;
+    margin-bottom: 25px;
+  }
+
+  .headerImage img {
+    width: 200px;
+    height: 130px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .intro {
+    font-size: 14px;
+  }
+
+  .familyTitle {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .familyMembers {
+    gap: 12px;
+  }
+
+  .aboutParagraphs p {
+    font-size: 14px;
+  }
+}
