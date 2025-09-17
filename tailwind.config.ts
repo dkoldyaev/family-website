@@ -14,7 +14,7 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['Arvo', 'serif'],
       },
     },
   },

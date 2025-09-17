@@ -17,23 +17,23 @@ export default function FamilyMember({
   isBaby = false
 }: FamilyMemberProps) {
   return (
-    <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 mb-10">
-      <div className="w-36 h-36 flex-shrink-0">
+    <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8">
+      <div className="w-32 h-32 flex-shrink-0">
         {isBaby ? (
-          <div className="w-36 h-36 bg-pink-500 rounded-full"></div>
+          <div className="w-32 h-32 bg-pink-500 rounded-full"></div>
         ) : (
           <Image
             src={imageSrc!}
             alt={imageAlt!}
-            width={150}
-            height={150}
-            className="w-36 h-36 rounded-full object-cover"
+            width={128}
+            height={128}
+            className="w-32 h-32 rounded-full object-cover"
           />
         )}
       </div>
-      <div className="flex-1 text-lg leading-relaxed text-center lg:text-left lg:pt-5">
-        <p>
-          <strong className="font-semibold text-black">{name}</strong> {description}
+      <div className="flex-1 text-lg leading-relaxed text-center lg:text-left lg:pt-2">
+        <p className="text-black">
+          <strong className="font-bold text-black">{name}</strong> {description}
         </p>
       </div>
     </div>
