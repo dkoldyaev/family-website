@@ -13,7 +13,7 @@ export default function ContactSection({ title, whatsapp, telegram, email }: Con
       <h2 className={styles.title}>{title}</h2>
       <div className={styles.contactButtons}>
         <a
-          href="https://wa.me/34612345678"
+          href="https://wa.me/79500135227"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.contactButton}
@@ -24,7 +24,7 @@ export default function ContactSection({ title, whatsapp, telegram, email }: Con
           {whatsapp}
         </a>
         <a
-          href="https://t.me/dmitry_koldaev"
+          href="https://t.me/dkoldyaev"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.contactButton}
@@ -35,7 +35,7 @@ export default function ContactSection({ title, whatsapp, telegram, email }: Con
           {telegram}
         </a>
         <a
-          href="mailto:dmitry.koldaev@gmail.com"
+          href="mailto:dkoldaev@gmail.com"
           className={styles.contactButton}
         >
           <svg className={styles.icon} viewBox="0 0 24 24" fill="currentColor">
