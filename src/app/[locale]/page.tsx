@@ -167,10 +167,12 @@ export default async function HomePage({
             description={t.dmitry.description}
             imageSrc="/dima.jpg"
             imageAlt="Dmitry"
-            socialLinks={{
-              linkedin: "https://linkedin.com/in/dmitry-koldaev",
-              github: "https://github.com/dmitry-koldaev"
-            }}
+            socialLinks={[
+              { site: 'linkedin', link: "https://www.linkedin.com/in/koldyaev-dmitry-b3392529/" },
+              { site: 'instagram', link: "https://www.instagram.com/dkoldyaev/" },
+              { site: 'instagram', link: "https://www.instagram.com/my_square_films/" },
+              { site: 'facebook', link: 'https://www.facebook.com/dkoldyaev/' },
+            ]}
           />
 
           <FamilyMember
@@ -178,9 +180,10 @@ export default async function HomePage({
             description={t.olesya.description}
             imageSrc="/olesya.jpg"
             imageAlt="Olesya"
-            socialLinks={{
-              instagram: "https://instagram.com/olesya_illustrator"
-            }}
+            socialLinks={[
+              { site: 'instagram', link: "https://www.instagram.com/gonserovskaya_illustration/" },
+              { site: 'facebook', link: 'https://www.facebook.com/olesya.gonserovskaya' },
+            ]}
           />
 
           <FamilyMember
