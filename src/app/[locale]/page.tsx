@@ -7,6 +7,14 @@ import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import styles from '../page.module.css';
 
+export async function generateStaticParams() {
+  return [
+    { locale: 'es' },
+    { locale: 'en' },
+    { locale: 'ca' }
+  ];
+}
+
 const translations = {
   es: {
     title: "HOLA!",
