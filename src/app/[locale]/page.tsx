@@ -29,7 +29,7 @@ const translations = {
       description: "artista e ilustradora de libros infantiles"
     },
     baby: {
-      name: "Feo",
+      name: "Theo",
       description: "nuestro bebé, que nacerá a principios de diciembre"
     },
     about: {
@@ -64,7 +64,7 @@ const translations = {
       description: "artist and children's book illustrator"
     },
     baby: {
-      name: "Feo",
+      name: "Theo",
       description: "our baby, who will be born in early December"
     },
     about: {
@@ -99,7 +99,7 @@ const translations = {
       description: "artista i il·lustradora de llibres infantils"
     },
     baby: {
-      name: "Feo",
+      name: "Theo",
       description: "el nostre bebè, que neixerà a principis de desembre"
     },
     about: {
