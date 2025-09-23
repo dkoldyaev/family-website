@@ -13,7 +13,7 @@ export default function ContactSection({ title, whatsapp, telegram, email }: Con
       <h2 className={styles.title}>{title}</h2>
       <div className={styles.contactButtons}>
         <a
-          href="https://wa.me/79500135227"
+          href="https://wa.me/34674822994"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.contactButton}
